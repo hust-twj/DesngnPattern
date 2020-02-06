@@ -10,6 +10,7 @@ import com.example.desngnpattern.factory_method.pattern.Q5CarProduct;
 import com.example.desngnpattern.factory_method.pattern.Q7CarProduct;
 
 /**
+ * 工厂方法模式
  * Created by hust_twj
  * on 2019/2/26
  *
