@@ -19,6 +19,10 @@
 
         <activity android:name=".factory_method.FactoryMethodActivity"/>
 
+        <activity android:name=".proxy.ProxyActivity"/>
+        <activity android:name=".proxy.static_proxy.StaticProxyActivity"/>
+        <activity android:name=".proxy.dynamic_proxy.DynamicProxyActivity"/>
+
     </application>
 
 </manifest>

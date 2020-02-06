@@ -5,10 +5,23 @@
         android:orientation="vertical">
 
     <TextView
-            android:id="@+id/tv_sticky"
+            android:id="@+id/tv_static_proxy"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="工厂方法"
+            android:text="静态代理模式"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+    <TextView
+            android:id="@+id/tv_dynamic_proxy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="动态代理模式"
             android:gravity="center"
             android:textSize="14sp" />
 

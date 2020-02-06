@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import com.example.desngnpattern.factory_method.FactoryMethodActivity
 import com.example.desngnpattern.main.MainAdapter
 import com.example.desngnpattern.main.MainEntity
+import com.example.desngnpattern.proxy.ProxyActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         mAdapter.setOnlClickListener(object : MainAdapter.OnClickListener{
             override fun onClick(index: Int) {
                 when(index){
+
+                    MainEntity.INDEX_PROXY -> startActivity(Intent(this@MainActivity, ProxyActivity::class.java))
+
                     MainEntity.INDEX_FACTORY_METHOD -> startActivity(Intent(this@MainActivity, FactoryMethodActivity::class.java))
 
                 }

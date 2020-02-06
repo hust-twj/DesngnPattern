@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.example.desngnpattern.R;
 
 
@@ -15,7 +16,7 @@ import java.util.ArrayList;
  * Created by Wenjing.Tang
  * on 2019/1/8
  */
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
+public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     private Context mContext;
     private ArrayList<MainEntity> mDataList;
@@ -29,11 +30,15 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     private void initData() {
         ArrayList<MainEntity> mDataList = new ArrayList<>();
 
+        MainEntity proxyEntity = new MainEntity();
+        proxyEntity.index = MainEntity.INDEX_PROXY;
+        proxyEntity.title = "1 代理模式";
+        mDataList.add(proxyEntity);
+
         MainEntity entity5 = new MainEntity();
         entity5.index = MainEntity.INDEX_FACTORY_METHOD;
         entity5.title = "5 工厂方法模式";
         mDataList.add(entity5);
-
 
         setDataList(mDataList);
     }
@@ -78,7 +83,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView mTvTitle;
-
 
         public ViewHolder(final View itemView) {
             super(itemView);
