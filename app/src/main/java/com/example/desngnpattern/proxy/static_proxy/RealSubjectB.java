@@ -6,11 +6,11 @@ import android.util.Log;
  * Description ：目标对象实现类
  * Created by Wenjing.Tang on 2020-02-06.
  */
-public class RealSubject implements ISubject{
+public class RealSubjectB implements ISubject{
 
     @Override
     public void buy() {
-        Log.e("twj124","我是 A，我要买一台 MacBook pro，请帮忙");
+        Log.e("twj124","我是 B，我要买一台 MacBook pro，请帮忙");
 
     }
 
